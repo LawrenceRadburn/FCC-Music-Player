@@ -86,14 +86,14 @@ let userData = {
     songCurrentTime: 0
 };
 
-const printGreeting = () => {
-  console.log("Hello there!");
-}
+const renderSongs = (array) => {
 
-printGreeting();
+};
 
-const printMessage = org => {
-  console.log(`${org} is awesome!`);
-}
-
-printMessage("freeCodeCamp");
+const songsHTML = array.map((song) => {
+  return `<li id="song-${song.id}" class="playlist-song"></li>
+  <button class="playlist-song-info"><span class="playlist-song-title">${song.title}</span>
+  <button class="playlist-song-artist">${song.artist}</button>
+  <button class="playlist-song-duration">${song.duration}</button>
+  </button`
+} );

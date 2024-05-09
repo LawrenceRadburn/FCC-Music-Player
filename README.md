@@ -6,6 +6,12 @@ The HTML and CSS files were provided by freeCodeCamp. As a result, I only worked
 
 ## What I learned
 
+### map() method
+The map() method is used to iterate through an array and return a new array.
+
+### Callback function
+A callback function is a function that is used as an argument of another function.
+
 ### Web Audio API
 All modern web browsers support the Web Audio API. You can add a new HTML Audio Element using the Audio() constructor
 
@@ -16,4 +22,7 @@ I used the spread operator [...] to copy elements from one array into another. U
 Throughout this project, I used arrow functions exclusively alongside the map() method.
 
 ### Template Literals
-Once again, template literals with placeholders were used throughout the project.
+Once again, template literals with substitution of placeholders were used throughout the project.
+
+#### String Interpolation
+Using template literals, I created string interpolation instead of string concatenation to improve the readability of the code.
