@@ -11,3 +11,9 @@ All modern web browsers support the Web Audio API. You can add a new HTML Audio 
 
 ### Spread Operator
 I used the spread operator [...] to copy elements from one array into another. Upon some further reading, I discovered the spread operator can also be used on strings as well. In addition, I made a mental note to not confuse the spread operator with the rest parameter syntax (...).
+
+### Arrow Funcions
+Throughout this project, I used arrow functions exclusively alongside the map() method.
+
+### Template Literals
+Once again, template literals with placeholders were used throughout the project.
