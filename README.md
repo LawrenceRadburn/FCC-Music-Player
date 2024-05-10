@@ -22,7 +22,10 @@ All modern web browsers support the Web Audio API. You can add a new HTML Audio 
 I used the spread operator [...] to copy elements from one array into another. Upon some further reading, I discovered the spread operator can also be used on strings as well. In addition, I made a mental note to not confuse the spread operator with the rest parameter syntax (...).
 
 ## Sort Operator
-The sort() method converts elements of an array strings and returns them based on their UTF-16 encoding.
+The sort() method converts elements of an array strings and returns them based on their UTF-16 encoding. This method was used to sort the order of the songs alphabetically. 
+
+## Find Method
+The find() method returns the first element in an array that meets the specified conditions.
 
 ### Sort Compare Callback Function
 Using the compare calback function (a.name < b.name) we can return string values according to their lexicographical order.
