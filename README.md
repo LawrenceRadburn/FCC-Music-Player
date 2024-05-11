@@ -12,6 +12,12 @@ The map() method is used to iterate through an array and return a new array.
 ## join() method
 The join() method concatenates all the elements of an array into a single string. In addition, I used the optional parameter to separate the strings.
 
+## add() method
+I used the add() method alongside the classList property to add classes to HTML elements.
+
+## remove() method
+I used the remove() method alongside the classList property to remove classes from HTML elements.
+
 ## Callback function
 A callback function is a function that is used as an argument of another function.
 

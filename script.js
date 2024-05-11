@@ -103,6 +103,10 @@ const renderSongs = (array) => {
   playlistSongs.innerHTML = songsHTML;
 };
 
+const getCurrentSongIndex = () => {
+  return userData?.songs.indexOf(userData?.currentSong);
+};
+
 const sortSongs = () => {
   userData?.songs.sort((a, b) => {
     if (a.title < b.title) {
@@ -131,10 +135,22 @@ const playSong = (id) => {
     userData.currentSong = song;
     playButton.classList.add("playing");
     audio.play();
-}
+};
 
+// Store current time of the song
 const pauseSong = () => {
+  userData.songCurrentTime = audio.currentTimee;
+  playButton.classList.remove("playing");
+  audio.pause();
+};
 
+const playNextSong = () => {
+  if (userData?.currentSong === null) {
+    playSong(userData?.songs[0].id);
+  }
+  else {
+    const currentSongIndex = getCurrentSongIndex();
+  }
 };
 
 playButton.addEventListener("click", () => {
@@ -145,3 +161,5 @@ playButton.addEventListener("click", () => {
     playSong(userData?.currentSong.id);
   }
 });
+
+pauseButton.addEventListener("click", pauseSong);
