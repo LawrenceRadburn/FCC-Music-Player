@@ -150,7 +150,13 @@ const playNextSong = () => {
   }
   else {
     const currentSongIndex = getCurrentSongIndex();
+    const nextSong = userData?.songs[currentSongIndex + 1];
+    playSong(nextSong.id);
   }
+};
+
+const playPreviousSong = () => {
+
 };
 
 playButton.addEventListener("click", () => {
@@ -163,3 +169,5 @@ playButton.addEventListener("click", () => {
 });
 
 pauseButton.addEventListener("click", pauseSong);
+
+nextButton.addEventListener("click", playNextSong);
