@@ -18,6 +18,15 @@ I used the add() method alongside the classList property to add classes to HTML 
 ## remove() method
 I used the remove() method alongside the classList property to remove classes from HTML elements.
 
+## removeAttribute() method
+I used the Element method removeAttribte() to remove ARIA attributes.
+
+## setAttribte() method
+I used the Element method setAttribute() to set the value of ARIA and boolean attributes. The setAttribute can take more than one argument.
+
+## forEach() method
+The forEach() method loops through and array and performs a function on each element of the array.
+
 ## Callback function
 A callback function is a function that is used as an argument of another function.
 
