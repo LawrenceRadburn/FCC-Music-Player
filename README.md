@@ -27,6 +27,14 @@ I used the Element method setAttribute() to set the value of ARIA and boolean at
 ## forEach() method
 The forEach() method loops through and array and performs a function on each element of the array.
 
+## createElement() method
+createElement() is a DOM method used to create dynamic elements. To use it you call the method and pass in the element as a string.
+
+Using the createElement() method I created a reset button within an if statement. Specifically, if the music player's playlist was empty, the user would be presented with a reset button.
+
+## createTextNode() method
+In tandem with the createElement() method, I used the createTextNode() method to accompany the button button from the createElement() method. 
+
 ## Callback function
 A callback function is a function that is used as an argument of another function.
 
