@@ -232,6 +232,18 @@ previousButton.addEventListener("click", playPreviousSong);
 
 shuffleButton.addEventListener("click", shuffle);
 
+audio.addEventListener("ended", () => {
+  const currentSongIndex = getCurrentSongIndex();
+  const nextSongExists = currentSongIndex <= userData.songs.length - 1;
+  if (nextSongExists) {
+    playNextSong();
+  }
+  else {
+    userData.currentSong = null;
+    userData.songCurrentTime = 0;
+  }
+});
+
 const setPlayerDisplay = () => {
   const playingSong = document.getElementById("player-song-title");
   const songArtist = document.getElementById("player-song-artist");
