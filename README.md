@@ -62,5 +62,5 @@ Once again, template literals with substitution of placeholders were used throug
 ### String Interpolation
 Using template literals, I created string interpolation ${}instead of string concatenation to improve the readability of the code.
 
-## Optional Chaning
+## Optional Chaining
 The optional chaining operator (?.) can be used to help prevent throwing an error. First, it accesses an object property, or function. However, if object or function is called and returns nullish (null or undefined), the expression evaluates instead to undefined.
